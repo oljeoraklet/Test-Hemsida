@@ -35,7 +35,6 @@ body {
 .title-container {
     border: 2px solid red;
     z-index: 1;
-
 }
 .title-container:hover ~ .left-line-blue {
     width: 62%;
