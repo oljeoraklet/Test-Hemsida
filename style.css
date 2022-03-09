@@ -18,7 +18,7 @@ body {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    /* background-color: #000000; */
+    background-color: #000000;
 }
 .top-container {
     position: relative;
@@ -29,13 +29,11 @@ body {
 }
 .inlayr-name {
     font-size: 10vh;
-    color: black;
+    color: white;
     font-weight: 500;
 }
 .title-container {
-    border: 2px solid red;
     z-index: 1;
-
 }
 .title-container:hover ~ .left-line-blue {
     width: 62%;
@@ -67,23 +65,24 @@ body {
 }
 .middle-container {
     height: 50%;
+    z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    background: linear-gradient(252.31deg, rgba(197, 118, 129, 0.0130075) 0%, rgba(238, 113, 104, 0.0106) 53.04%, rgba(103, 131, 187, 0.0084) 100%);
-    box-shadow: inset -10px -10px 20px 1px rgba(255, 255, 255, 0.5), inset 10px 10px 20px 1px rgba(17, 15, 15, 0.25);
+    background-color: rgba(31, 31, 31, 0.1);
+    box-shadow: inset 0 2px rgba(33, 33, 33, 0.3), inset 0 -2px rgba(29, 29, 29, 0.3) ;
 }
+.middle-container img {
+    z-index: 3;
+}
+
 .construction {
     padding: 2rem;
 }
 .text-container {
-    border: 2px dotted orange;
     font-size: 4vh;
-}
-.image-container {
-    border: 2px dotted orange;
+    color: white;
 }
 .bottom-container {
     height: 25%;
@@ -91,4 +90,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.circle {
+    filter: blur(500px);
+    opacity: 5%;
+}
+.one, .two {
+    height: 867px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    z-index: 2;
 }
