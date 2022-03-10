@@ -1,6 +1,6 @@
 :root {
     --line-width: 35%;
-    --line-height: 10%;
+    --line-height: 15%;
     --clr-primary-blue: #6783BB;
     --clr-primary-red: #EE7168;
 }
@@ -23,9 +23,7 @@ body {
 .top-container {
     position: relative;
     height: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
+    
 }
 .inlayr-name {
     font-size: 10vh;
@@ -81,8 +79,21 @@ body {
     padding: 2rem;
 }
 .text-container {
-    font-size: 4vh;
+    height: auto;
+}
+.text-container h3 {
+    font-size: 3vh;
     color: white;
+    font-weight: 100;
+    margin-bottom: 1vh;
+}
+.banner-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: auto;
+    width: 100%;
 }
 .bottom-container {
     height: 25%;
@@ -91,15 +102,48 @@ body {
     align-items: center;
     flex-direction: column;
 }
+.empty-div {
+    height: 25%;
+}
+.img-container {
+    height: 20%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-container img {
+    height: 100%;
+}
 .circle {
     filter: blur(500px);
-    opacity: 5%;
+    opacity: 8%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    position: absolute;
 }
 .one, .two {
     height: 867px;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    background-color: red;
-    position: absolute;
     z-index: 2;
+}
+.three, .four {
+    height: 250px;
+}
+.one, .three{
+    background-color: var(--clr-primary-red);
+}
+.two, .four {
+    background-color: var(--clr-primary-blue);
+}
+.two {
+    bottom: 0;
+    right: 0;
+}
+.three {
+    top: 0;
+    right: 0;
+}
+.four {
+    bottom: 0;
+    left: 0;
 }
