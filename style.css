@@ -85,7 +85,7 @@ body {
     height: auto;
 }
 .text-container h3 {
-    font-size: 2vw;
+    font-size: calc(12px + 1.5vw);
     color: white;
     font-weight: 100;
     margin-bottom: 3vh;
