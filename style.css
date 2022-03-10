@@ -11,6 +11,8 @@
 }
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .page-container {
     position: relative;
@@ -19,14 +21,15 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #000000;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .top-container {
     position: relative;
-    height: 25%;
-    
+    height: 25%;  
 }
 .inlayr-name {
-    font-size: 10vh;
+    font-size: 8vw;
     color: white;
     font-weight: 500;
 }
@@ -48,7 +51,7 @@ body {
 }
 .left-line-blue{
     background-color: var(--clr-primary-blue);
-    margin-top: 3rem;
+    margin-top: 3vw;
     border-radius: 0 1rem 1rem 0;
     z-index: 2;
     left: 0;
@@ -56,7 +59,7 @@ body {
 }
 .right-line-red {
     background-color: var(--clr-primary-red);
-    margin-bottom: 3rem;
+    margin-bottom: 3vw;
     border-radius: 1rem 0 0 1rem;
     right: 0;
     z-index: 0;
@@ -82,7 +85,7 @@ body {
     height: auto;
 }
 .text-container h3 {
-    font-size: 3vh;
+    font-size: calc(12px + 1.5vw);
     color: white;
     font-weight: 100;
     margin-bottom: 3vh;
@@ -91,9 +94,10 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     height: auto;
     width: 100%;
+    border: 2px solid salmon;
 }
 .bottom-container {
     height: 25%;
